@@ -17,4 +17,20 @@
 输出样例：
 5
 '''
-
+ 
+# 奇偶数（n%2是否等于0）
+# 不超过1000的正整数n
+n = int(input('请输入正整数n：'))
+while True:
+    if n <= 1000:
+        count = 0  # 计数器
+        while n != 1:
+            if n % 2 == 0:
+                n /= 2
+            else:
+                n = (n * 3 + 1)/2
+            count += 1
+        print(count)
+        break
+    else:
+        n = int(input('输入有误！请重新输入任一不超过1000的正整数n：'))
