@@ -70,3 +70,21 @@ print(json.dumps(data, indent = 2)) # With indention
 #   ]
 # }
 ```
+
+#### 5、解决 FizzBuzz 问题
+
+```text
+写一个程序，打印数字 1 到 100，3 的倍数打印“Fizz”来替换这个数，5 的倍数打印“Buzz”，
+对于既是 3 的倍数又是 5 的倍数的数字打印“FizzBuzz”。
+```
+
+```python
+for x in range(1, 101):
+    print "fizz"[x % 3 * len('fizz')::] + "buzz"[x % 5 * len('buzz')::] or x
+```
+
+#### 6、if 语句在行内
+
+```python
+print "hello" if True else "world" # hello
+```
